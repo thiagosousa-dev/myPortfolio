@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+.header-container {
+  background-color: #1F2428;
+  height: 36px;
+}
+
+.nav-bar {
+  border: none;
+  outline: none;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  border: 1px solid #24292e;
+  background-color: #1f2428;
+  color: white;
+  font-size: 14px;
+}
+
+.nav-bar.active {
+  border: 1px solid #24292e;
+  border-top: 1px solid #AD5B64;
+  background-color: #24292E;
+}
+

@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import myContext from "../context/AppContext";
+import '../styles/Header.css';
 
 function Header() {
   const navigate = useNavigate();
@@ -10,7 +11,7 @@ function Header() {
     navigate(`/${name}`);
   }
   return ( 
-    <header>
+    <header className="header-container">
       <nav>
         <button
           type="button"
@@ -18,7 +19,7 @@ function Header() {
           className={selectedPage === '' ? 'nav-bar active' : 'nav-bar'}
           onClick={selectPage}
         >
-          Home
+          home.jsx
         </button>
         <button
           type="button"
@@ -26,7 +27,7 @@ function Header() {
           className={selectedPage === 'about' ? 'nav-bar active' : 'nav-bar'}
           onClick={selectPage}
         >
-          About
+          about.html
         </button>
         <button
           type="button"
@@ -34,7 +35,7 @@ function Header() {
           className={selectedPage === 'projects' ? 'nav-bar active' : 'nav-bar'}
           onClick={selectPage}
         >
-          Projects
+          projects.js
         </button>
         <button
           type="button"
@@ -42,7 +43,7 @@ function Header() {
           className={selectedPage === 'contact' ? 'nav-bar active' : 'nav-bar'}
           onClick={selectPage}
         >
-          Contact
+          contact.css
         </button>
       </nav>
     </header>
