@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import AppContext from './AppContext';
 
 function Provider({children}) {
-  const [selectedPage, setSelectedPage] = useState('Home');
+  const [selectedPage, setSelectedPage] = useState('');
   const state = {
     selectedPage,
     setSelectedPage,

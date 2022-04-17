@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import myContext from "../context/AppContext";
 
 function Header() {
   const navigate = useNavigate();
+  const { selectedPage, setSelectedPage } = useContext(myContext)
   const selectPage = ({target: {name}}) => {
+    setSelectedPage(name)
     navigate(`/${name}`);
   }
   return ( 
@@ -12,6 +15,7 @@ function Header() {
         <button
           type="button"
           name=""
+          className={selectedPage === '' ? 'nav-bar active' : 'nav-bar'}
           onClick={selectPage}
         >
           Home
@@ -19,6 +23,7 @@ function Header() {
         <button
           type="button"
           name="about"
+          className={selectedPage === 'about' ? 'nav-bar active' : 'nav-bar'}
           onClick={selectPage}
         >
           About
@@ -26,18 +31,20 @@ function Header() {
         <button
           type="button"
           name="projects"
+          className={selectedPage === 'projects' ? 'nav-bar active' : 'nav-bar'}
           onClick={selectPage}
         >
           Projects
         </button>
-      </nav>
-      <button
+        <button
           type="button"
           name="contact"
+          className={selectedPage === 'contact' ? 'nav-bar active' : 'nav-bar'}
           onClick={selectPage}
         >
           Contact
         </button>
+      </nav>
     </header>
   );
 }
