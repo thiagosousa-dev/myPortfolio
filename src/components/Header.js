@@ -23,6 +23,13 @@ function Header() {
         >
           About
         </button>
+        <button
+          type="button"
+          name="projects"
+          onClick={selectPage}
+        >
+          Projects
+        </button>
       </nav>
     </header>
   );
