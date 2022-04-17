@@ -31,6 +31,13 @@ function Header() {
           Projects
         </button>
       </nav>
+      <button
+          type="button"
+          name="contact"
+          onClick={selectPage}
+        >
+          Contact
+        </button>
     </header>
   );
 }
