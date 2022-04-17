@@ -1,8 +1,23 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function Header() {
+  const navigate = useNavigate();
+  const selectPage = ({target: {name}}) => {
+    navigate(`/${name}`);
+  }
   return ( 
-    <h1>Header</h1>
+    <header>
+      <nav>
+        <button
+          type="button"
+          name=""
+          onClick={selectPage}
+        >
+          Home
+        </button>
+      </nav>
+    </header>
   );
 }
 
