@@ -8,7 +8,9 @@ function Contact() {
     <div>
       <TitleBar />
       <Header />
-      <h1>Contact</h1>
+      <main className="main-container">
+        <h1>Contact</h1>
+      </main>
       <Footer />
     </div>
   );

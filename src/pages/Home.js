@@ -8,7 +8,9 @@ function Home() {
     <div>
       <TitleBar />
       <Header />
-      <h1>Home</h1>
+      <main className="main-container">
+        <h1>Home</h1>
+      </main>
       <Footer />
     </div>
   );

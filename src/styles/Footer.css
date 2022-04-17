@@ -7,7 +7,7 @@
   width: 100%;
   height: 45px;
   align-items: center;
-  border: 1px solid #24292e;
+  border-top: 1px solid #4a5058;
 }
 
 .footer-container p {
@@ -31,4 +31,9 @@
 
 .icon-footer {
   font-size: 1.2rem;
+  transition: 0.5s;
+}
+
+.icon-footer:hover {
+  color: #bdbebe;
 }

@@ -8,7 +8,9 @@ function Projects() {
     <div>
       <TitleBar />
       <Header />
-      <h1>Projects</h1>
+      <main className="main-container">
+        <h1>Projects</h1>
+      </main>
       <Footer />
     </div>
   );

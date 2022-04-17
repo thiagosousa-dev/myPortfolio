@@ -7,6 +7,16 @@
   font-family: 'Fira Code', monospace;
 }
 
+.main-container {
+  background-color: #24292E;
+  width: 100%;
+  height: 90vh;
+}
+
+h1 {
+  color: white;
+}
+
 .App {
   text-align: center;
 }
