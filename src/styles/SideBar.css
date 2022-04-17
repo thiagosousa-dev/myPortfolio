@@ -1,0 +1,54 @@
+.side-bar-container {
+  height: 100%;
+  background-color: #1F2428;
+  width: 18vw;
+  color: white;
+  border: 1px solid #4a5058;
+  border-right: none;
+}
+
+.explore-title {
+  padding: 0.7rem 1rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.75rem;
+  font-size: 14px;
+}
+
+.explore-portfolio {
+  padding: 0.2rem 1.2rem;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+  gap: 0.5rem;
+  border: none;
+  outline: none;
+  background-color: #1F2428;
+  color: white;
+  width: 100%;
+}
+
+.explore-portfolio:hover {
+  background-color: #24292E;
+}
+
+.explorer-file {
+  padding: 0.3rem 3rem;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+  color: white;
+}
+
+.explorer-file:hover {
+  background-color: #24292E;
+}
+
+.icon-side-bar {
+  width: 18px;
+}

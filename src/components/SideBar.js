@@ -1,8 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
+import '../styles/SideBar.css';
+import react_icon from '../images/react_icon.svg'
+import js_icon from '../images/js_icon.svg'
+import html_icon from '../images/html_icon.svg'
+import css_icon from '../images/css_icon.svg'
+import { IoIosArrowDown,IoIosArrowForward } from 'react-icons/io';
+import { FaFolder, FaFolderOpen } from 'react-icons/fa';
+import { Link } from "react-router-dom";
 
 function SideBar() {
+  const [open, setOpen] =useState(true);
   return ( 
-    <h1>SideBar</h1>
+    <aside className="side-bar-container">
+      <div  className="explore-title">
+        <p>EXPLORER</p>
+      </div>
+      <button type="button" 
+        className="explore-portfolio" 
+        onClick={() => setOpen(!open)}
+      >
+        {open ? <IoIosArrowDown /> : <IoIosArrowForward />}
+        {open ? <FaFolderOpen color="#EBCB8B"/> : <FaFolder color="#EBCB8B"/>}
+        <p>Portfolio</p>
+      </button>
+      {open && (
+        <>
+          <Link to="/" className="explorer-file">
+            <img src={ react_icon } alt="icon" className="icon-side-bar"/>
+            <p>home.jsx</p>
+          </Link>
+          <Link to="/about" className="explorer-file">
+            <img src={ html_icon } alt="icon" className="icon-side-bar"/>
+            <p>about.html</p>
+          </Link>
+          <Link to="/projects" className="explorer-file">
+            <img src={ js_icon } alt="icon" className="icon-side-bar"/>
+            <p>projects.js</p>
+          </Link>
+          <Link to="/contact" className="explorer-file">
+            <img src={ css_icon } alt="icon" className="icon-side-bar"/>
+            <p>contact.css</p>
+          </Link>
+        </>
+      )}
+    </aside>
   );
 }
 

@@ -8,20 +8,29 @@
   height: 45px;
   align-items: center;
   border-top: 1px solid #4a5058;
+  justify-content: center;
 }
 
-.footer-container p {
-  padding: 0 1rem;
-  height: 100%;
+.links-footer {
   display: flex;
   align-items: center;
-  border-right: 1px solid #4a5058;
+  position: fixed;
+  left: 0;
+}
+
+.links-footer p {
+  padding: 0 1rem;
+  height: 45px;
+  display: flex;
+  align-items: center;
   font-size: 13px;
+  border-right: 1px solid #4a5058;
+
 }
 
 .icon-container {
   width: 45px;
-  height: 40px;
+  height: 45px;
   border-right: 1px solid #4a5058;
   display: flex;
   align-items: center;
@@ -36,4 +45,8 @@
 
 .icon-footer:hover {
   color: #bdbebe;
+}
+
+.text-footer {
+  font-size: 14px;
 }

@@ -10,6 +10,10 @@
 .main-container {
   background-color: #24292E;
   width: 100%;
+}
+
+.wrapper {
+  display: flex;
   height: 90vh;
 }
 
