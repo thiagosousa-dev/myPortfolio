@@ -3,6 +3,10 @@
   height: 36px;
 }
 
+.nav-container {
+  display: flex;
+}
+
 .nav-bar {
   border: none;
   outline: none;
@@ -12,11 +16,21 @@
   background-color: #1f2428;
   color: white;
   font-size: 14px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-decoration: none;
 }
 
 .nav-bar.active {
   border: 1px solid #24292e;
   border-top: 1px solid #AD5B64;
   background-color: #24292E;
+}
+
+.icon-nav {
+  width: 18px;
 }
 
