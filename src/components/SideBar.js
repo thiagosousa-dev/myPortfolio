@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import '../styles/SideBar.css';
 import react_icon from '../images/react_icon.svg'
 import js_icon from '../images/js_icon.svg'
@@ -7,11 +7,13 @@ import css_icon from '../images/css_icon.svg'
 import { IoIosArrowDown,IoIosArrowForward } from 'react-icons/io';
 import { FaFolder, FaFolderOpen } from 'react-icons/fa';
 import { Link } from "react-router-dom";
+import myContext from "../context/AppContext";
 
 function SideBar() {
+  const {activeSideBar} = useContext(myContext)
   const [open, setOpen] =useState(true);
   return ( 
-    <aside className="side-bar-container">
+    <aside className={`side-bar-container ${activeSideBar && 'active'}`}>
       <div  className="explore-title">
         <p>EXPLORER</p>
       </div>

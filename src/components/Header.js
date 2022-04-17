@@ -5,6 +5,7 @@ import react_icon from '../images/react_icon.svg'
 import js_icon from '../images/js_icon.svg'
 import html_icon from '../images/html_icon.svg'
 import css_icon from '../images/css_icon.svg'
+import MenuMobile from "./MenuMobile";
 
 function Header() {
   return ( 
@@ -29,7 +30,8 @@ function Header() {
           icon={ css_icon }
           name='contact.css'
           path="/contact"
-        />  
+        /> 
+        <MenuMobile />
       </nav>
     </header>
   );

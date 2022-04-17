@@ -50,3 +50,9 @@
 .text-footer {
   font-size: 14px;
 }
+
+@media screen and (max-width: 855px) {
+  .text-footer {
+    display: none;
+  }
+}

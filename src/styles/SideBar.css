@@ -1,7 +1,7 @@
 .side-bar-container {
   height: 100%;
   background-color: #1F2428;
-  width: 18vw;
+  width: 350px;
   color: white;
   border: 1px solid #4a5058;
   border-right: none;
@@ -51,4 +51,50 @@
 
 .icon-side-bar {
   width: 18px;
+}
+
+@media screen and (max-width: 855px) {
+  .side-bar-container {
+    position: absolute;
+    width: 0;
+    right: 0;
+    top: 40px;
+    transition: 0.3s ease-in;
+    overflow-x: hidden;
+  }
+  .side-bar-container.active {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    width: 300px;
+    display: block;
+  }
+
+  .side-bar-container .explore-title {
+    opacity: 0;
+  }
+
+  .side-bar-container.active .explore-title {
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+  }
+
+  .side-bar-container .explore-portfolio {
+    opacity: 0;
+  }
+
+  .side-bar-container.active .explore-portfolio {
+    opacity: 1;
+    transition: 0.4s ease;
+  }
+
+  .side-bar-container .explorer-file {
+    opacity: 0;
+  }
+
+  .side-bar-container.active .explorer-file {
+    opacity: 1;
+    transition: 0.3s ease;
+  }
+  
 }
