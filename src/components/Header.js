@@ -16,6 +16,13 @@ function Header() {
         >
           Home
         </button>
+        <button
+          type="button"
+          name="about"
+          onClick={selectPage}
+        >
+          About
+        </button>
       </nav>
     </header>
   );
