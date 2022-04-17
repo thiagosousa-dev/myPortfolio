@@ -6,17 +6,19 @@ import SideBar from "../components/SideBar";
 
 function Home() {
   return ( 
-    <div>
+    <body>
       <TitleBar />
-      <div className="wrapper">
-        <main className="main-container">
+      <section className="flex-container">
+        <section className="main-container">
           <Header />
-          <h1>Home</h1>
-        </main>
+          <main className="main-wrapper">
+            <h1>Home</h1>
+          </main>
+        </section>
         <SideBar />
-      </div>
+      </section>
       <Footer />
-    </div>
+    </body>
   );
 }
 
