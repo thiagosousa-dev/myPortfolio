@@ -1,10 +1,14 @@
 .side-bar-container {
   height: 100%;
   background-color: #1F2428;
-  width: 350px;
+  width: 20vw;
   color: white;
-  border: 1px solid #4a5058;
+  border-left: 1px solid #161a1d;
   border-right: none;
+  position: fixed;
+  right: 0;
+  top: 40px;
+  overflow-x: hidden;
 }
 
 .explore-title {
@@ -55,15 +59,12 @@
 
 @media screen and (max-width: 855px) {
   .side-bar-container {
-    position: absolute;
     width: 0;
     right: 0;
     top: 40px;
     transition: 0.3s ease-in;
-    overflow-x: hidden;
   }
   .side-bar-container.active {
-    position: absolute;
     right: 0;
     top: 40px;
     width: 300px;

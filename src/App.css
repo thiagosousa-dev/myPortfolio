@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=La+Belle+Aurore&display=swap');
 
 * {
   padding: 0;
@@ -9,20 +9,26 @@
 
 .flex-container {
   display: flex;
-  height: 90vh;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
 }
 
 .main-container {
   background-color: #24292E;
-  width: 100%;
-  position: relative;
+  width: 80vw;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .main-wrapper {
-  width: 100%;
-  height: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
-
 
 h1 {
   color: white;
@@ -64,5 +70,48 @@ h1 {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+@media screen and (max-width: 855px) {
+  .main-container {
+    width: 100vw;
+  }
+
+  .hamburger-menu {
+    cursor: pointer;
+    top: 41px;
+    position: fixed;
+    right: 10px;
+    background-color: #1F2428;
+    border: none;
+    outline: none;
+    height: 30px;
+    display: block;
+    z-index: 1000;
+  }
+  
+  .line-1 , .line-2 , .line-3 {
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    margin: 7px;
+    transition: all 0.3s;
+  }
+
+  .line-1.active {
+    transform: rotate(-45deg) translate(-7px, 7px);
+  }
+
+  .line-2.active {
+    opacity: 0;
+  }
+
+  .line-3.active {
+    transform: rotate(45deg) translate(-5.5px, -6px);
   }
 }

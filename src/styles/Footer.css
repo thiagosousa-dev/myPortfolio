@@ -1,14 +1,15 @@
 .footer-container {
   display: flex;
-  background-color: #1f2428;
+  background-color: #24292E;
   bottom: 0;
   position: fixed;
   color: white;
-  width: 100%;
+  width: 100vw;
   height: 45px;
   align-items: center;
-  border-top: 1px solid #4a5058;
+  border-top: 1px solid #161a1d;
   justify-content: center;
+  z-index: 2;
 }
 
 .links-footer {
@@ -24,14 +25,11 @@
   display: flex;
   align-items: center;
   font-size: 13px;
-  border-right: 1px solid #4a5058;
-
 }
 
 .icon-container {
   width: 45px;
   height: 45px;
-  border-right: 1px solid #4a5058;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,11 +42,23 @@
 }
 
 .icon-footer:hover {
-  color: #bdbebe;
+  color: #768390;
 }
 
 .text-footer {
   font-size: 14px;
+}
+
+.select-language {
+  position: absolute;
+  right: 1rem;
+  width: 90px;
+  padding: 1px;
+  height: 30px;
+  border: none;
+  outline: none;
+  background-color: #373E47;
+  color: white;
 }
 
 @media screen and (max-width: 855px) {
