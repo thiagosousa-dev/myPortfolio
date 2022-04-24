@@ -1,6 +1,8 @@
 import React from "react";
 import { BsLinkedin, BsGithub } from 'react-icons/bs';
 import '../styles/Footer.css';
+// import English from '../images/kingdom_united_icon.png';
+// import Portuguese from '../images/brazil_icon.png';
 
 function Footer() {
   return ( 
@@ -22,7 +24,12 @@ function Footer() {
           <BsGithub className="icon-footer"/>
         </a>
       </div>
+      
       <p className="text-footer">Developed with ❤ by Thiago Nóbrega</p>
+      {/* <select className="select-language">
+        <option>🇧🇷 pt-BR</option>
+        <option>🇺🇸 en-US</option>
+      </select> */}
     </footer>
   );
 }
