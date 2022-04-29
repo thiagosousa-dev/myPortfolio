@@ -1,0 +1,41 @@
+.title-bar {
+  background-color: #1f2428;
+  border-bottom: 1px solid #161a1d;
+  color: white;
+  font-size: 13px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1;
+}
+
+.title-btn {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  gap: 10px;
+  left: 10px;
+}
+
+.minimize, .maximize, .close {
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+}
+
+.close {
+  background-color: #BF616A;
+}
+
+.minimize {
+  background-color: #EBCB8B;
+}
+
+.maximize {
+  background-color: #A3BE8C;
+}

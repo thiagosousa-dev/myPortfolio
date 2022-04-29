@@ -3,10 +3,10 @@ import React, { useState } from 'react';
 import AppContext from './AppContext';
 
 function Provider({children}) {
-  const [selectedPage, setSelectedPage] = useState('Home');
+  const [activeSideBar, setActiveSideBar] = useState(false);
   const state = {
-    selectedPage,
-    setSelectedPage,
+    activeSideBar,
+    setActiveSideBar,
   }
   return ( 
     <AppContext.Provider value={ state }>

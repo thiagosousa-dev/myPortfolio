@@ -1,0 +1,78 @@
+.main-wrapper.about {
+  justify-content: center;
+  gap: 4rem;
+}
+
+.about-container {
+  width: min(600px, 90vw);
+  margin-top: 30px;
+}
+
+.title-about {
+  font-size: 50px;
+  margin-left: 3.6rem;
+  color: #539BF5;
+  position: relative;
+}
+
+/* .title-about:first-of-type:before {
+  content: '<h1>';
+  font-family: 'La Belle Aurore',cursive;
+  color: #515152;
+  font-size: 18px;
+  position: absolute;
+  margin-top: -1rem;
+  left: -2rem;
+} */
+
+.iconCloud-container {
+  width: 450px;
+  margin-top: 50px;
+}
+
+.text-about {
+  color: white;
+  margin-left: 2.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.text-about.last {
+  margin-bottom: 0;
+}
+
+.span-tag {
+  font-family: 'La Belle Aurore', cursive;
+  color: #768390;
+}
+
+.span-tag.body {
+  margin-left: 0.8rem;
+}
+
+
+.span-tag.content {
+  margin-left: 1.6rem;
+}
+
+.tag {
+  font-family: 'La Belle Aurore', cursive;
+  color: #768390;
+}
+
+
+@media screen and (max-width: 1090px) {
+  .main-wrapper.about {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .about-container {
+    width: min(600px, 90vw);
+    margin-top: 120px;
+  }
+
+  .iconCloud-container {
+    width: 350px;
+    margin-bottom: 70px;
+  }
+}

@@ -1,0 +1,108 @@
+.home-content {
+  padding: 1rem;
+  margin-top: 100px;
+}
+
+.home-content h1 {
+  font-size: 50px;
+  color: white;
+}
+
+.home-content h2 {
+  font-size: 22px;
+  font-weight: 400;
+  /* color: #AD5B64; */
+  color: #768390;
+}
+
+.home-content p {
+  font-size: 20px;
+  color: #539BF5;
+}
+
+.span {
+  color: #539BF5;
+}
+
+.main-wrapper.home {
+  justify-content: center;
+}
+
+.image {
+  width: 550px;
+  margin-top: 50px;
+}
+
+.btn-download {
+  border:none;
+  outline: none;
+  border-radius: 10px;
+  height: 50px;
+  width: 150px;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #373E47;
+  color: #ADBAC7;
+  transition: 0.3s;
+}
+
+.btn-download:hover {
+  background-color: #306DCA;
+  color: white;
+}
+
+@media screen and (max-width: 1375px) {
+  .main-wrapper.home {
+    flex-direction: column;
+  }
+
+  .home-content {
+    margin-top: 0;
+    margin-bottom: 5rem;
+  }
+
+  .home-content h1 {
+    font-size: 50px;
+  }
+  
+  .home-content h2 {
+    font-size: 30px;
+  }
+  
+  .home-content p {
+    font-size: 20px;
+  }
+  
+  .image {
+    width: 450px;
+    order: 1;
+  }
+
+  .home-content {
+    order: 2;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .home-content h1 {
+    font-size: 35px;
+  }
+  
+  .home-content h2 {
+    font-size: 20px;
+  }
+  
+  .home-content p {
+    font-size: 16px;
+  }
+
+  .image {
+    width: 300px;
+  }
+}

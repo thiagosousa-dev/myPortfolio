@@ -1,0 +1,101 @@
+.side-bar-container {
+  height: 100%;
+  background-color: #1F2428;
+  width: 20vw;
+  color: white;
+  border-left: 1px solid #161a1d;
+  border-right: none;
+  position: fixed;
+  right: 0;
+  top: 40px;
+  overflow-x: hidden;
+}
+
+.explore-title {
+  padding: 0.7rem 1rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.75rem;
+  font-size: 14px;
+}
+
+.explore-portfolio {
+  padding: 0.2rem 1.2rem;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+  gap: 0.5rem;
+  border: none;
+  outline: none;
+  background-color: #1F2428;
+  color: white;
+  width: 100%;
+}
+
+.explore-portfolio:hover {
+  background-color: #24292E;
+}
+
+.explorer-file {
+  padding: 0.3rem 3rem;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+  color: white;
+}
+
+.explorer-file:hover {
+  background-color: #24292E;
+}
+
+.icon-side-bar {
+  width: 18px;
+}
+
+@media screen and (max-width: 855px) {
+  .side-bar-container {
+    width: 0;
+    right: 0;
+    top: 40px;
+    transition: 0.3s ease-in;
+  }
+  .side-bar-container.active {
+    right: 0;
+    top: 40px;
+    width: 300px;
+    display: block;
+  }
+
+  .side-bar-container .explore-title {
+    opacity: 0;
+  }
+
+  .side-bar-container.active .explore-title {
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+  }
+
+  .side-bar-container .explore-portfolio {
+    opacity: 0;
+  }
+
+  .side-bar-container.active .explore-portfolio {
+    opacity: 1;
+    transition: 0.4s ease;
+  }
+
+  .side-bar-container .explorer-file {
+    opacity: 0;
+  }
+
+  .side-bar-container.active .explorer-file {
+    opacity: 1;
+    transition: 0.3s ease;
+  }
+  
+}
