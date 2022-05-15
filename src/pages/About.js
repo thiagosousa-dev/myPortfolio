@@ -22,18 +22,18 @@ function About() {
               <span className="span-tag body">{'<body>'}</span>
               <br/>
               <span className="span-tag content">{'<h1>'}</span>
-                <h1 className="title-about">About me</h1>
+                <h1 className="title-about">Olá,</h1>
               <span className="span-tag content">{'</h1>'}</span>
               <br/>
               <span className="span-tag content">{'<p>'}</span>
                 <p className="text-about">
-                  Olá! Meu nome é Thiago e adoro solucionar problemas através dos códigos. Sou formado em Engenharia Civil, mas atualmente estudo Desenvolvimento Web.
+                  Meu nome é <span className="span-highlight"><b>Thiago Nóbrega</b></span> e adoro solucionar problemas através dos códigos. Sou formado em Engenharia Civil, mas estou em transição de carreira, atualmente estudando Desenvolvimento <span className="span-highlight">Web Full Stack.</span>
                 </p>
                 <p className="text-about">
-                  Sou um profissional em transição de carreira, que encontrou na programação um propósito de vida. Meu foco é poder ajudar a melhorar a vida das pessoas, desenvolvendo aplicações que sejam acessíveis e funcionais. 
+                  Meu foco é poder ajudar a melhorar a vida das pessoas, desenvolvendo aplicações que sejam <span className="span-highlight">acessíveis e funcionais</span>. A experiência inclui a solução de problemas e testes, trabalhando em equipes com prazos rigorosos, para projetos desenvolvidos no curso da Trybe.
                 </p>
                 <p className="text-about last">
-                  Atualmente procuro uma oportunidade como desenvolvedor Front-End, mas também estou estudando para me tornar um desenvolvedor FullStack. As tecnologias que utilizo são: Html, CSS, JavaScript, React, Redux, ContextAPI, Hooks, Jest/RTL, Git/Github.
+                  AS habilidades relevantes incluem: <span className="span-highlight">Html, CSS, JavaScript, React, Redux, ContextAPI, Hooks, Jest/RTL, Git/Github.</span>
                 </p>
               <span className="span-tag content">{'</p>'}</span>
               <br/>

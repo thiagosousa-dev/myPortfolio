@@ -36,7 +36,7 @@
 .btn-download {
   border:none;
   outline: none;
-  border-radius: 10px;
+  border-radius: 5px;
   height: 50px;
   width: 150px;
   font-size: 1rem;
@@ -47,13 +47,13 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  background-color: #373E47;
-  color: #ADBAC7;
+  background-color: #306DCA;
+  color: white;
   transition: 0.3s;
 }
 
 .btn-download:hover {
-  background-color: #306DCA;
+  background-color: #225aad;
   color: white;
 }
 
@@ -86,6 +86,9 @@
 
   .home-content {
     order: 2;
+  }
+  .btn-download {
+    width: 100%;
   }
 }
 

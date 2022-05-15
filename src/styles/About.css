@@ -4,15 +4,14 @@
 }
 
 .about-container {
-  width: min(600px, 90vw);
+  width: min(800px, 90vw);
   margin-top: 30px;
 }
 
 .title-about {
   font-size: 50px;
-  margin-left: 3.6rem;
-  color: #539BF5;
-  position: relative;
+  margin-left: 2.5rem;
+  color: #e1e1e6;
 }
 
 /* .title-about:first-of-type:before {
@@ -34,6 +33,7 @@
   color: #e1e1e6;
   margin-left: 2.4rem;
   margin-bottom: 1.5rem;
+  font-size: 1.1rem;
 }
 
 .text-about.last {
@@ -57,6 +57,10 @@
 .tag {
   font-family: 'La Belle Aurore', cursive;
   color: #768390;
+}
+
+.span-highlight {
+  color: #539BF5;
 }
 
 

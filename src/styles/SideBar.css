@@ -3,7 +3,7 @@
   background-color: #1F2428;
   width: 17.5rem;
   color: white;
-  border-right: 1px solid #161a1d;
+  border-right: 1px solid #2D333B;
   position: fixed;
   top: 40px;
   overflow-x: hidden;
@@ -58,7 +58,7 @@
 
 @media screen and (max-width: 1150px) {
   .side-bar-container {
-    border-left: 1px solid #161a1d;
+    border-left: 1px solid #2D333B;
     width: 0;
     right: 0;
     top: 40px;

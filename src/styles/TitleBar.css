@@ -1,6 +1,6 @@
 .title-bar {
   background-color: #1f2428;
-  border-bottom: 1px solid #161a1d;
+  border-bottom: 1px solid #2D333B;
   color: white;
   font-size: 13px;
   height: 40px;
@@ -11,7 +11,7 @@
   top: 0;
   left: 0;
   width: 100vw;
-  z-index: 1;
+  z-index: 2;
 }
 
 .title-btn {

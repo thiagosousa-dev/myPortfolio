@@ -16,7 +16,7 @@
   outline: none;
   padding: 0.5rem 1.5rem;
   cursor: pointer;
-  border-right: 1.5px solid #24292E;
+  border-right: 1.5px solid #2D333B;
   background-color: #1f2428;
   color: white;
   font-size: 14px;
@@ -29,9 +29,9 @@
 }
 
 .nav-bar.active {
-  border-right: 1.5px solid #24292E;
+  border-right: 1.5px solid #2D333B;
   border-bottom: none;
-  border-top: 3px solid #AD5B64;
+  border-top: 2px solid #AD5B64;
   background-color: #24292E;
 }
 
