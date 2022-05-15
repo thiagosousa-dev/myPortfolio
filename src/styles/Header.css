@@ -4,7 +4,7 @@
   position: fixed;
   top: 40px;
   width: 100vw; 
-  left: 0;
+  left: 17.5rem;
 }
 
 .nav-container {
@@ -39,7 +39,10 @@
   width: 18px;
 }
 
-@media screen and (max-width: 855px) {
+@media screen and (max-width: 1150px) {
+  .header-container {
+    left: 0;
+  }
   .nav-bar {
     display: none;
   }

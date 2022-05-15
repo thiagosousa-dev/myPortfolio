@@ -1,14 +1,13 @@
 .side-bar-container {
   height: 100%;
   background-color: #1F2428;
-  width: 20vw;
+  width: 17.5rem;
   color: white;
-  border-left: 1px solid #161a1d;
-  border-right: none;
+  border-right: 1px solid #161a1d;
   position: fixed;
-  right: 0;
   top: 40px;
   overflow-x: hidden;
+  z-index: 1;
 }
 
 .explore-title {
@@ -57,12 +56,14 @@
   width: 18px;
 }
 
-@media screen and (max-width: 855px) {
+@media screen and (max-width: 1150px) {
   .side-bar-container {
+    border-left: 1px solid #161a1d;
     width: 0;
     right: 0;
     top: 40px;
     transition: 0.3s ease-in;
+
   }
   .side-bar-container.active {
     right: 0;

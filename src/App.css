@@ -17,7 +17,8 @@
 
 .main-container {
   background-color: #24292E;
-  width: 80vw;
+  width: calc(100vw - 17.5rem);
+  margin-left: 17.5rem;
   overflow-x: hidden;
   overflow-y: hidden;
 }
@@ -77,9 +78,10 @@ h1 {
   display: none;
 }
 
-@media screen and (max-width: 855px) {
+@media screen and (max-width: 1150px) {
   .main-container {
     width: 100vw;
+    margin-left: auto;
   }
 
   .hamburger-menu {

@@ -4,7 +4,7 @@ import TitleBar from "../components/TitleBar";
 import Footer from "../components/Footer";
 import SideBar from "../components/SideBar";
 import '../styles/Home.css';
-import image from '../images/image.png';
+import image from '../images/img-perfil.png';
 import { FiDownload } from 'react-icons/fi';
 import MenuMobile from "../components/MenuMobile";
 import Typical from 'react-typical';
@@ -14,6 +14,7 @@ function Home() {
     <body>
       <TitleBar />
       <section className="flex-container">
+        <SideBar />
         <section className="main-container">
           <Header />
           <MenuMobile />
@@ -22,7 +23,7 @@ function Home() {
               <p><span className="span">{'<'}</span>Hi there 👋 I'm</p>
               <h1>Thiago Nóbrega <span className="span">{'/>'}</span> </h1>
               <Typical 
-                steps={['Front-End Developer', 1000, 'Full Stack Web Development Student', 1000]}
+                steps={['Front-End Developer', 1000, 'Web Development Student', 1000]}
                 loop={Infinity}
                 wrapper="h2"
               />
@@ -31,10 +32,10 @@ function Home() {
                 <FiDownload />
               </button>
             </div>
-            <img src={image} alt="imag" className="image"/>
+            <img src={image} alt="Foto de perfil do Thiago, um jovem homem branco de cabelo castanho" className="image"/>
           </main>
         </section>
-        <SideBar />
+        {/* <SideBar /> */}
       </section>
       <Footer />
     </body>

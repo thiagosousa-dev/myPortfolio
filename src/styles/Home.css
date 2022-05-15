@@ -29,7 +29,7 @@
 }
 
 .image {
-  width: 550px;
+  width: 500px;
   margin-top: 50px;
 }
 
@@ -103,6 +103,6 @@
   }
 
   .image {
-    width: 300px;
+    width: 400px;
   }
 }
