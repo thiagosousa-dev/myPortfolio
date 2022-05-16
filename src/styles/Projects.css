@@ -16,6 +16,7 @@
   padding-bottom: 100px;
   width: min(1200px, 90vw);
   justify-content: center;
+  align-items: center;
 }
 
 .img-project {
@@ -59,4 +60,31 @@
   display: flex;
   gap: 1.2rem;
   justify-content: end;
+}
+
+.btn-container {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn-filter {
+  background-color: #539cf531;
+  color: #539BF5;
+  border: none;
+  cursor: pointer;
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn-filter:hover {
+  background-color: #539BF5;
+  color: #e1e1e6;
+}
+
+.btn-filter.active {
+  background-color: #539BF5;
+  color: #e1e1e6;
 }

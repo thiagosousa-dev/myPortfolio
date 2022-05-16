@@ -18,7 +18,7 @@ const projects = [
     technologies: ['React', 'Redux', 'CSS3', 'HTML5', 'ES6', 'Jest'],
   },
   {
-    type: 'front', 
+    type: 'front back', 
     name: 'Recipes App', 
     description: 'App de receitas que busca, filtra e favorita receitas de comidas e bebidas', 
     src: 'https://github.com/thiagodanobrega/recipes-app/raw/main/recipe.gif?raw=true', 
@@ -36,7 +36,7 @@ const projects = [
     technologies: ['React', 'Redux', 'CSS3', 'HTML5', 'ES6', 'Jest'],
   },
   {
-    type: 'front', 
+    type: 'back', 
     name: 'Recipes App', 
     description: 'App de receitas que busca, filtra e favorita receitas de comidas e bebidas', 
     src: 'https://github.com/thiagodanobrega/recipes-app/raw/main/recipe.gif?raw=true', 
@@ -45,7 +45,7 @@ const projects = [
     technologies: ['React', 'Redux', 'CSS3', 'HTML5', 'ES6', 'Jest'],
   },
   {
-    type: 'front', 
+    type: 'back', 
     name: 'Recipes App', 
     description: 'App de receitas que busca, filtra e favorita receitas de comidas e bebidas', 
     src: 'https://github.com/thiagodanobrega/recipes-app/raw/main/recipe.gif?raw=true', 

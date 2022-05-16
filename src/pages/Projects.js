@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../components/Header";
 import TitleBar from "../components/TitleBar";
 import Footer from "../components/Footer";
@@ -10,6 +10,11 @@ import { FiExternalLink, FiGithub } from 'react-icons/fi';
 
 
 function Projects() {
+  const [typeFilter, setTypeFilter] = useState('all');
+  const filterProjects = () => {
+    if (typeFilter === 'all') return projects;
+    return projects.filter(({type}) => type.includes(typeFilter));
+  }
   return ( 
     <body>
     <TitleBar />
@@ -19,8 +24,31 @@ function Projects() {
         <MenuMobile />
         <main className="main-wrapper projects">
           <h1 className="title">Alguns projetos...</h1>
+          <div className="btn-container">
+            <button 
+              type="button" 
+              className={`btn-filter ${typeFilter === 'all' && 'active'}`} 
+              onClick={() => setTypeFilter('all')}
+            >
+              All
+            </button>
+            <button 
+              type="button" 
+              className={`btn-filter ${typeFilter === 'front' && 'active'}`} 
+              onClick={() => setTypeFilter('front')}
+            >
+              Front-end
+            </button>
+            <button 
+              type="button" 
+              className={`btn-filter ${typeFilter === 'back' && 'active'}`} 
+              onClick={() => setTypeFilter('back')}
+            >
+              Back-end
+            </button>
+          </div>
           <div className="projects-container">
-            {projects.map(({type, name, src, repository, description, site, technologies }, index) => (
+            {filterProjects().map(({type, name, src, repository, description, site, technologies }, index) => (
               <div key={index} className="card-project">
                 <div>
                   <img src={src} alt="Imagem do projeto" className="img-project"/>
