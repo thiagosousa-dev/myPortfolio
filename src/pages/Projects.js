@@ -4,6 +4,10 @@ import TitleBar from "../components/TitleBar";
 import Footer from "../components/Footer";
 import SideBar from "../components/SideBar";
 import MenuMobile from "../components/MenuMobile";
+import projects from "../data/projects"
+import "../styles/Projects.css"
+import { FiExternalLink, FiGithub } from 'react-icons/fi';
+
 
 function Projects() {
   return ( 
@@ -13,8 +17,28 @@ function Projects() {
       <section className="main-container">
         <Header />
         <MenuMobile />
-        <main className="main-wrapper">
-          <h1>Projects</h1>
+        <main className="main-wrapper projects">
+          <h1 className="title">Alguns projetos...</h1>
+          <div className="projects-container">
+            {projects.map(({type, name, src, repository, description, site, technologies }, index) => (
+              <div key={index} className="card-project">
+                <div>
+                  <img src={src} alt="Imagem do projeto" className="img-project"/>
+                </div>
+                <h2 className="title-project">{name}</h2>
+                <p>{description}</p>
+                <div className="technologies-container">
+                  {technologies.map(tech => (
+                    <span className="span-technologies">{tech}</span>
+                  ))}
+                </div>
+                <div className="links-container">
+                  <a href={repository} title="Github" target="_blank" rel="noreferrer"><FiGithub /></a>
+                  <a href={site} title="Ver aplicação" target="_blank" rel="noreferrer"><FiExternalLink /></a>
+                </div>
+              </div>
+            ))}
+          </div>
         </main>
       </section>
       <SideBar />

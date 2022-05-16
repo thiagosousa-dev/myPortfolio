@@ -1,0 +1,58 @@
+const projects = [
+  {
+    type: 'front', 
+    name: 'Recipes App', 
+    description: 'App de receitas que busca, filtra e favorita receitas de comidas e bebidas', 
+    src: 'https://github.com/thiagodanobrega/recipes-app/raw/main/recipe.gif?raw=true', 
+    repository: 'https://github.com/thiagodanobrega/recipes-app', 
+    site: 'https://recipes-app-thiagodanobrega.vercel.app/', 
+    technologies: ['React', 'Redux', 'CSS3', 'HTML5', 'ES6', 'Jest'],
+  },
+  {
+    type: 'front', 
+    name: 'Recipes App', 
+    description: 'App de receitas que busca, filtra e favorita receitas de comidas e bebidas', 
+    src: 'https://github.com/thiagodanobrega/recipes-app/raw/main/recipe.gif?raw=true', 
+    repository: 'https://github.com/thiagodanobrega/recipes-app', 
+    site: 'https://recipes-app-thiagodanobrega.vercel.app/', 
+    technologies: ['React', 'Redux', 'CSS3', 'HTML5', 'ES6', 'Jest'],
+  },
+  {
+    type: 'front', 
+    name: 'Recipes App', 
+    description: 'App de receitas que busca, filtra e favorita receitas de comidas e bebidas', 
+    src: 'https://github.com/thiagodanobrega/recipes-app/raw/main/recipe.gif?raw=true', 
+    repository: 'https://github.com/thiagodanobrega/recipes-app', 
+    site: 'https://recipes-app-thiagodanobrega.vercel.app/', 
+    technologies: ['React', 'Redux', 'CSS3', 'HTML5', 'ES6', 'Jest'],
+  },
+  {
+    type: 'front', 
+    name: 'Recipes App', 
+    description: 'App de receitas que busca, filtra e favorita receitas de comidas e bebidas', 
+    src: 'https://github.com/thiagodanobrega/recipes-app/raw/main/recipe.gif?raw=true', 
+    repository: 'https://github.com/thiagodanobrega/recipes-app', 
+    site: 'https://recipes-app-thiagodanobrega.vercel.app/', 
+    technologies: ['React', 'Redux', 'CSS3', 'HTML5', 'ES6', 'Jest'],
+  },
+  {
+    type: 'front', 
+    name: 'Recipes App', 
+    description: 'App de receitas que busca, filtra e favorita receitas de comidas e bebidas', 
+    src: 'https://github.com/thiagodanobrega/recipes-app/raw/main/recipe.gif?raw=true', 
+    repository: 'https://github.com/thiagodanobrega/recipes-app', 
+    site: 'https://recipes-app-thiagodanobrega.vercel.app/', 
+    technologies: ['React', 'Redux', 'CSS3', 'HTML5', 'ES6', 'Jest'],
+  },
+  {
+    type: 'front', 
+    name: 'Recipes App', 
+    description: 'App de receitas que busca, filtra e favorita receitas de comidas e bebidas', 
+    src: 'https://github.com/thiagodanobrega/recipes-app/raw/main/recipe.gif?raw=true', 
+    repository: 'https://github.com/thiagodanobrega/recipes-app', 
+    site: 'https://recipes-app-thiagodanobrega.vercel.app/', 
+    technologies: ['React', 'Redux', 'CSS3', 'HTML5', 'ES6', 'Jest'],
+  },
+];
+
+export default projects;
