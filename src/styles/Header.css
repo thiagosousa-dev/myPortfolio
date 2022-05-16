@@ -18,7 +18,7 @@
   cursor: pointer;
   border-right: 1.5px solid #2D333B;
   background-color: #1f2428;
-  color: white;
+  color: #768390;
   font-size: 14px;
   text-align: center;
   display: flex;
@@ -33,6 +33,7 @@
   border-bottom: none;
   border-top: 2px solid #AD5B64;
   background-color: #24292E;
+  color: #e1e1e6;
 }
 
 .icon-nav {

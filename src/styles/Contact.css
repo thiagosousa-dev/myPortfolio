@@ -32,7 +32,7 @@ a {
 }
 
 .title-contact {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #e1e1e6;
 }
 
@@ -69,4 +69,29 @@ a {
   font-family: 'Fira Code', monospace;
   padding-left: 6rem;
   border-left: 1px solid #768390;
+}
+
+@media screen and (max-width: 1150px) {
+  .main-wrapper.contact {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .list-contact .line:before {
+    border-left: none;
+    padding-left: 1rem;
+  }
+
+  .list-contact {
+    padding-left: 1.6rem;
+  }
+
+  .title-contact {
+    font-size: 1.8rem;
+  }
+
+  .title-container {
+    border-bottom: 1px solid #768390;
+    padding-bottom: 4rem;
+  }
 }
