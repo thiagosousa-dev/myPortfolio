@@ -1,7 +1,7 @@
 .title-bar {
-  background-color: #1f2428;
-  border-bottom: 1px solid #2D333B;
-  color: white;
+  background-color: var(--gray-500);
+  border-bottom: 1px solid var(--gray-300);
+  color: var(--white-100);
   font-size: 13px;
   height: 40px;
   display: flex;

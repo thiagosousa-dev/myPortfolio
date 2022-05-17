@@ -1,13 +1,13 @@
 .footer-container {
   display: flex;
-  background-color: #24292E;
+  background-color: var(--gray-400);
   bottom: 0;
   position: fixed;
-  color: white;
+  color: var(--white-100);
   width: 100vw;
   height: 50px;
   align-items: center;
-  border-top: 1px solid #2D333B;
+  border-top: 1px solid var(--gray-300);
   justify-content: center;
   z-index: 2;
 }
@@ -33,7 +33,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: var(--white-100);
 }
 
 .icon-footer {
@@ -42,7 +42,7 @@
 }
 
 .icon-footer:hover {
-  color: #93989e;
+  color: var(--gray-100);
 }
 
 .text-footer {
@@ -57,8 +57,8 @@
   height: 30px;
   border: none;
   outline: none;
-  background-color: #373E47;
-  color: white;
+  background-color: var(--gray-500);
+  color: var(--white-100);
 }
 
 @media screen and (max-width: 855px) {

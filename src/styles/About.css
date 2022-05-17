@@ -11,7 +11,7 @@
 .title-about {
   font-size: 50px;
   margin-left: 2.5rem;
-  color: #e1e1e6;
+  color: var(--white-100);
 }
 
 /* .title-about:first-of-type:before {
@@ -30,7 +30,7 @@
 }
 
 .text-about {
-  color: #e1e1e6;
+  color: var(--white-100);
   margin-left: 2.4rem;
   margin-bottom: 1.5rem;
   font-size: 1.1rem;
@@ -42,7 +42,7 @@
 
 .span-tag {
   font-family: 'La Belle Aurore', cursive;
-  color: #768390;
+  color: var(--gray-100);
 }
 
 .span-tag.body {
@@ -56,11 +56,11 @@
 
 .tag {
   font-family: 'La Belle Aurore', cursive;
-  color: #768390;
+  color: var(--gray-100);
 }
 
 .span-highlight {
-  color: #539BF5;
+  color: var(--blue-200);
 }
 
 

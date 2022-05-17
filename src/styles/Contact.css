@@ -4,23 +4,23 @@
   align-items: center;
 }
 .class-name {
-  color: #539BF5;
+  color: var(--blue-200);
   font-size: 1.2rem;
 }
 
 .element {
-  color: #e1e1e6;
+  color: var(--white-100);
   font-size: 1.2rem;
 }
 
 .key-name {
-  color: #e1e1e6;
+  color: var(--white-100);
   margin-left: 1.2rem;
   font-size: 1.2rem;
 }
 
 a {
-  color: #539BF5;
+  color: var(--blue-200);
   list-style: none;
   font-size: 1.2rem;
 }
@@ -33,11 +33,11 @@ a {
 
 .title-contact {
   font-size: 2rem;
-  color: #e1e1e6;
+  color: var(--white-100);
 }
 
 .message-contact {
-  color: #768390;
+  color: var(--gray-100);
   font-size: 1rem;
   margin-top: 1.5rem;
 }
@@ -63,12 +63,11 @@ a {
   content: counter(line);
   counter-increment: line;
   display: inline-block;
-  border-right: 1px solid #ddd;
   border:none;
-  color: #768390;
+  color: var(--gray-100);
   font-family: 'Fira Code', monospace;
   padding-left: 6rem;
-  border-left: 1px solid #768390;
+  border-left: 1px solid var(--gray-200);
 }
 
 @media screen and (max-width: 1150px) {
@@ -91,7 +90,7 @@ a {
   }
 
   .title-container {
-    border-bottom: 1px solid #768390;
+    border-bottom: 1px solid var(--gray-200);
     padding-bottom: 4rem;
   }
 }

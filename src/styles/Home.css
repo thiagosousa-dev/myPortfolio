@@ -5,22 +5,22 @@
 
 .home-content h1 {
   font-size: 50px;
-  color: white;
+  color: var(--white-100);
 }
 
 .home-content h2 {
   font-size: 22px;
   font-weight: 400;
-  color: #768390;
+  color: var(--gray-100);
 }
 
 .home-content p {
   font-size: 20px;
-  color: #539BF5;
+  color: var(--blue-200);
 }
 
 .span {
-  color: #539BF5;
+  color: var(--blue-200);
 }
 
 .main-wrapper.home {
@@ -33,6 +33,7 @@
 }
 
 .btn-download {
+  text-decoration: none;
   border:none;
   outline: none;
   border-radius: 5px;
@@ -46,14 +47,14 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  background-color: #306DCA;
-  color: white;
+  background-color: var(--blue-300);
+  color: var(--white-100);
   transition: 0.3s;
 }
 
 .btn-download:hover {
-  background-color: #225aad;
-  color: white;
+  background-color: var(--blue-400);
+  color: var(--white-100);
 }
 
 @media screen and (max-width: 1375px) {
