@@ -23,7 +23,7 @@ function Projects() {
         <Header />
         <MenuMobile />
         <main className="main-wrapper projects">
-          <h1 className="title">Alguns projetos...</h1>
+          <h1 className="title">Meus projetos...</h1>
           <div className="btn-container">
             <button 
               type="button" 
@@ -50,7 +50,7 @@ function Projects() {
           <div className="projects-container">
             {filterProjects().map(({type, name, src, repository, description, site, technologies }, index) => (
               <div key={index} className="card-project">
-                <div>
+                <div className="img-container">
                   <img src={src} alt="Imagem do projeto" className="img-project"/>
                 </div>
                 <h2 className="title-project">{name}</h2>
