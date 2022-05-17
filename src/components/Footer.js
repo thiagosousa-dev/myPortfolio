@@ -8,7 +8,7 @@ function Footer() {
   return ( 
     <footer className="footer-container">
       <div className="links-footer">
-        <p>Find me in:</p>
+        <p>Encontre-me em:</p>
         <a href="https://www.linkedin.com/in/thiagodanobrega/" 
           target="_blank" 
           className="icon-container" 
@@ -25,7 +25,7 @@ function Footer() {
         </a>
       </div>
       
-      <p className="text-footer">Developed with ❤ by Thiago Nóbrega</p>
+      <p className="text-footer">Desenvolvido com ❤ por Thiago Nóbrega</p>
       {/* <select className="select-language">
         <option>🇧🇷 pt-BR</option>
         <option>🇺🇸 en-US</option>

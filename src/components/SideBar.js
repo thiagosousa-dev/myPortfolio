@@ -4,6 +4,7 @@ import react_icon from '../images/react_icon.svg'
 import js_icon from '../images/js_icon.svg'
 import html_icon from '../images/html_icon.svg'
 import css_icon from '../images/css_icon.svg'
+import json_icon from '../images/json_icon.svg'
 import { IoIosArrowDown,IoIosArrowForward } from 'react-icons/io';
 import { FaFolder, FaFolderOpen } from 'react-icons/fa';
 import { Link } from "react-router-dom";
@@ -33,15 +34,19 @@ function SideBar() {
           </Link>
           <Link to="/about" className="explorer-file">
             <img src={ html_icon } alt="icon" className="icon-side-bar"/>
-            <p>about.html</p>
+            <p>sobre.html</p>
           </Link>
           <Link to="/projects" className="explorer-file">
             <img src={ js_icon } alt="icon" className="icon-side-bar"/>
-            <p>projects.js</p>
+            <p>projetos.js</p>
+          </Link>
+          <Link to="/recommendation" className="explorer-file">
+            <img src={ json_icon } alt="icon" className="icon-side-bar"/>
+            <p>recomendacoes.json</p>
           </Link>
           <Link to="/contact" className="explorer-file">
             <img src={ css_icon } alt="icon" className="icon-side-bar"/>
-            <p>contact.css</p>
+            <p>contato.css</p>
           </Link>
         </>
       )}

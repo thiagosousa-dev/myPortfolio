@@ -20,17 +20,22 @@ function Home() {
           <MenuMobile />
           <main className="main-wrapper home">
             <div className="home-content">
-              <p><span className="span">{'<'}</span>Hi there 👋 I'm</p>
+              <p><span className="span">{'<'}</span>Olá 👋 eu sou o</p>
               <h1>Thiago Nóbrega <span className="span">{'/>'}</span> </h1>
               <Typical 
                 steps={['Front-End Developer', 1000, 'Web Development Student', 1000]}
                 loop={Infinity}
                 wrapper="h2"
               />
-              <button type="button" className="btn-download">
+              <a 
+                href="curriculo-thiago.pdf" 
+                download = "curriculo-thiago.pdf" 
+                type = "application/pdf" 
+                className="btn-download"
+              >
                 Download CV
                 <FiDownload />
-              </button>
+              </a>
             </div>
             <img src={image} alt="Foto de perfil do Thiago, um jovem homem branco de cabelo castanho" className="image"/>
           </main>

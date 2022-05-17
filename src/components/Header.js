@@ -5,6 +5,8 @@ import react_icon from '../images/react_icon.svg'
 import js_icon from '../images/js_icon.svg'
 import html_icon from '../images/html_icon.svg'
 import css_icon from '../images/css_icon.svg'
+import json_icon from '../images/json_icon.svg'
+
 
 function Header() {
   return ( 
@@ -17,17 +19,22 @@ function Header() {
         /> 
         <MenuBar 
           icon={ html_icon }
-          name='about.html'
+          name='sobre.html'
           path="/about"
         />
         <MenuBar 
           icon={ js_icon }
-          name='projects.js'
+          name='projetos.js'
           path="/projects"
         />
         <MenuBar 
+          icon={ json_icon }
+          name='recomendacoes.json'
+          path="/recommendation"
+        /> 
+        <MenuBar 
           icon={ css_icon }
-          name='contact.css'
+          name='contato.css'
           path="/contact"
         /> 
       </nav>
