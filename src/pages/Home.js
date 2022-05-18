@@ -28,16 +28,18 @@ function Home() {
                 wrapper="h2"
               />
               <a 
-                href="curriculo-thiago.pdf" 
-                download = "curriculo-thiago.pdf" 
-                type = "application/pdf" 
-                className="btn-download"
+                href="https://gitconnected.com/thiagodanobrega/resume" 
+                target="_blank"
+                className="btn-download" rel="noreferrer"
               >
                 Download CV
                 <FiDownload />
               </a>
             </div>
-            <img src={image} alt="Foto de perfil do Thiago, um jovem homem branco de cabelo castanho" className="image"/>
+            <img 
+              src={image} alt="Foto de perfil do Thiago, um jovem homem branco de cabelo castanho" 
+              className="image-perfil"
+            />
           </main>
         </section>
         {/* <SideBar /> */}
