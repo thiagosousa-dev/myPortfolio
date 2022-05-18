@@ -1,7 +1,7 @@
 # My Porfolio
 
 <p align="center">
- <img width="900" src="https://github.com/thiagodanobrega/mysql-one-for-all/blob/thiago-nobrega-one-for-all/drawSQL-export-2022-05-15_11_32.png?raw=true" alt="exemplo imagem" >
+ <img width="900" src="https://github.com/thiagodanobrega/myPortfolio/blob/master/project-preview.png?raw=true" alt="exemplo imagem" >
 </p>
 
 ## 💻 Projeto
