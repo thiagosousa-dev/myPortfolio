@@ -23,7 +23,7 @@ function Projects() {
         <Header />
         <MenuMobile />
         <main className="main-wrapper projects">
-          <h1 className="title">Meus projetos...</h1>
+          <h1 className="title-page-projects">Meus projetos...</h1>
           <div className="btn-container">
             <button 
               type="button" 
