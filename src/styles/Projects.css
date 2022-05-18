@@ -3,7 +3,7 @@
   flex-direction: column;
   padding-top: 150px;
 }
-.title {
+.title-page-projects {
   font-size: 45px;
 }
 
@@ -99,7 +99,11 @@
 }
 
 @media screen and (max-width: 500px) {
-  .title {
+  .title-page-projects {
     font-size: 30px;
+  }
+
+  .main-wrapper.projects {
+    padding-top: 100px;
   }
 }
