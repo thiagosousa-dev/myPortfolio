@@ -17,9 +17,9 @@ const useIcons = (slugs) => {
     return Object.values(data.simpleIcons).map((icon) => {
       return renderSimpleIcon({
         icon,
-        minContrastRatio: 1,
-        bgHex: "#fff",
-        fallbackHex: "#000",
+        minContrastRatio: 2,
+        bgHex: "#24292e",
+        fallbackHex: "#e1e1e6",
         size: 45,
         aProps: {
           onClick: (e) => {
@@ -61,7 +61,7 @@ const Componente = () => {
   const icons = useIcons(iconSlugs);
   return (
     <div className="iconCloud-container">
-      <Cloud tagCanvasOptions={tagCanvasOptions}>
+      <Cloud options={tagCanvasOptions}>
         {icons}
       </Cloud>
     </div>
